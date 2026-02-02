@@ -47,5 +47,10 @@ Specific programming languages and topics will be added progressively.
 This repository documents an active learning process.  
 Code, notes, and structure may evolve as concepts deepen and improve over time.
 
-## License
-This project is open for learning and educational purposes.
+## License and Disclaimer
+This repository is created for personal learning, teaching, and demonstration purposes under LWS (LearnWithStriver).
+
+All content, including code, notes, and structure, is the intellectual property of Mayank Jeshani unless stated otherwise.  
+Unauthorized copying, redistribution, or commercial use of this material without explicit permission is not permitted.
+
+This repository reflects an evolving learning process. While care has been taken to ensure clarity and correctness, the author makes no guarantees regarding completeness or accuracy, and the content should be used at the reader’s discretion.
