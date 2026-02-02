@@ -28,18 +28,6 @@ Each topic is covered using:
 
 This repository is intended to be read sequentially, similar to a course.
 
-## Repository Structure
-The repository is organized in a course-like format:
-
-LWS-Programming-Foundations-101/
-├── 00-introduction/
-├── 01-language-basics/
-├── 02-control-flow/
-├── 03-functions/
-├── 04-problem-solving/
-├── notes/
-└── README.md
-
 Specific programming languages and topics will be added progressively.
 
 ## Who This Is For
