@@ -1,22 +1,88 @@
-## Variable Rules (Expanded)
-- Variables are dynamic references to objects in memory—no type declarations needed.
+## Variable Rules (Beginner-Friendly)
 
-- Assignment: variable_name = value binds the name to an object. Reuse with new_value = old_variable.
+- A variable is just a **name** that points to some data stored in memory.
+- You do not need to tell Python the type. Python figures it out automatically.
 
-## Naming Conventions:
+### Assignment
+- Format: `variable_name = value`
+- Example idea: a label stuck on a box
+- You can reuse a variable by assigning a new value to it
 
-- Valid: Letters, digits (not first), underscores: user_name, _private, score2.
+---
 
-- Invalid: Starts with digit (2score), spaces, hyphens, keywords (if = 1).
+## Naming Rules
 
-- Style: snake_case for variables (PEP 8 standard). Constants: ALL_CAPS.
+### Valid Names
+- Can use letters, numbers, and underscores
+- Must start with a letter or `_`
 
-## Mutability Basics:
+Examples:
+- `user_name`
+- `_private`
+- `score2`
 
-- Immutable (can't change in place): int, float, str, bool, tuple. Reassignment creates new object.
+### Invalid Names
+- Cannot start with a number
+- Cannot contain spaces or hyphens
+- Cannot use Python keywords
 
-- Mutable (change contents): list, dict, set. Modify without reassigning name.
+Examples:
+- `2score`
+- `user-name`
+- `if`
 
-- Rebinding: x = 5; x = "hi"—old int object garbage collected.
+### Style Rule
+- Use lowercase with underscores (snake_case)
+- Constants are written in ALL_CAPS
 
-- Key Insight: Everything's an object. id(variable) shows memory address—see rebinding effects.
+---
+
+## Mutability (Can the Value Change?)
+
+### Immutable Types
+These **cannot be changed** once created:
+- `int`
+- `float`
+- `str`
+- `bool`
+- `tuple`
+
+If you change the value, Python creates a **new object**.
+
+---
+
+### Mutable Types
+These **can be changed** without creating a new object:
+- `list`
+- `dict`
+- `set`
+
+You can modify what’s inside them directly.
+
+---
+
+## Reassignment vs Modification
+
+- Reassignment: variable points to a new value
+- Modification: value itself changes
+
+Example idea:
+- Reassignment = replacing the box
+- Modification = adding something inside the same box
+
+---
+
+## Important Idea
+
+- Everything in Python is an object
+- Variables point to objects in memory
+- When you reassign, the variable points somewhere else
+- Old objects are removed automatically if unused
+
+---
+
+## Key Takeaway
+- Variables are labels, not boxes
+- Same name can point to different objects over time
+- Mutable objects change in place
+- Immutable objects require reassignment
