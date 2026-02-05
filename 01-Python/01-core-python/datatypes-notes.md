@@ -1,86 +1,107 @@
+# data_types_notes.md
+
 ## Purpose
-Understanding different kinds of data in Python.  
-Every value in Python has a **data type**, which tells Python what kind of data it is and what operations can be performed on it.
+This file explains **what data types are in Python** in a simple and beginner-friendly way.  
+Data types tell Python **what kind of value** a variable is holding.
 
 ---
 
-## Common Built-in Data Types
+## What is a Data Type?
+A data type defines:
+- What kind of data a value is
+- What operations can be done on it
+
+Every value in Python has a data type.
+
+---
+
+## Main Data Types You Need to Know
 
 ### 1. int (Integer)
-- Used for **whole numbers**
+- Whole numbers
 - No decimal point
 
-**Examples**
-```python
-age = 18
-score = 100
-temperature = -5
-2. float (Floating-point number)
-Used for numbers with decimal points
+Examples of integers:
+- 1
+- 10
+- -5
+- 1000
 
-Examples
+Used when:
+- Counting
+- Scoring
+- Indexing
 
-price = 99.99
-pi = 3.14
-height = 5.8
-3. str (String)
-Used for text
+---
 
-Always written inside quotes (single or double)
+### 2. float (Floating-point)
+- Numbers with decimal points
 
-Examples
+Examples of floats:
+- 3.14
+- 0.5
+- 99.99
+- -2.7
 
-name = "Alex"
-message = 'Hello, world'
-game = "Minecraft"
-4. bool (Boolean)
-Used for true or false values
+Used when:
+- Measuring
+- Calculations with precision
+- Prices, heights, weights
 
-Only two possible values: True or False
+---
 
-Note: Capital T and F are required
+### 3. str (String)
+- Text data
+- Written inside quotes
 
-Examples
+Examples of strings:
+- "Hello"
+- 'Python'
+- "123"
 
-is_logged_in = True
-game_over = False
-The type() Function
-Used to check the data type of a value or variable
+Used when:
+- Names
+- Messages
+- Any text information
 
-Syntax
+---
 
-type(value)
-Examples
+### 4. bool (Boolean)
+- Represents truth values
+- Only two possible values
 
-x = 10
-print(type(x))        # <class 'int'>
+Values:
+- True
+- False
 
-y = 3.5
-print(type(y))        # <class 'float'>
+Used when:
+- Checking conditions
+- Decisions
+- Yes / No logic
 
-name = "Alex"
-print(type(name))     # <class 'str'>
+---
 
-is_active = True
-print(type(is_active)) # <class 'bool'>
-Why Data Types Matter
-Python behaves differently based on data type
+## type() Function
+- Used to find out the data type of a value
+- Helps in debugging and learning
 
-Helps avoid errors
+Returns:
+- int type
+- float type
+- str type
+- bool type
 
-Makes code predictable and easier to understand
+---
 
-Example
+## Why Understanding Data Types is Important
+- Prevents logical errors
+- Helps Python know how to treat data
+- Makes your code more readable and reliable
 
-print(10 + 5)        # 15 (math addition)
-print("10" + "5")    # 105 (string joining)
+---
 
 ## Learning Outcome
-
-- By the end of this:
-
-- You can identify int, float, str, and bool
-
-- You can use type() to check data types
-
-- You understand what kind of data you are working with before writing logic
+After this file, you should:
+- Know the basic Python data types
+- Understand when to use each one
+- Recognize why data types matter
