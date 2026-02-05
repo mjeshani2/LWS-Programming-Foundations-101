@@ -1,0 +1,134 @@
+Purpose: Converting data safely  
+Level: Beginner  
+
+---
+
+## 1. Introduction to Type Casting
+
+Type casting is the process of converting one data type into another.  
+In Python, data types do not automatically change in most cases, so explicit conversion is often required.
+
+Common type casting functions:
+- `int()`
+- `float()`
+- `str()`
+
+Examples:
+- `"10"` → `10`
+- `5` → `"5"`
+- `"3.5"` → `3.5`
+
+---
+
+## 2. Why Type Casting Is Needed
+
+Python is a strongly typed language. This means operations between different data types are not allowed without conversion.
+
+Example (error case):
+```python
+age = "18"
+print(age + 1)
+Reason:
+
+"18" is a string
+
+1 is an integer
+Python cannot add a string and an integer.
+
+Correct usage:
+
+age = int(age)
+print(age + 1)
+Type casting prevents runtime errors and makes programs safer and more predictable.
+
+3. int() – Converting to Integer
+Description
+int() converts a value into a whole number.
+
+Valid conversions
+"10" → 10
+
+12.9 → 12
+
+5 → 5
+
+Invalid conversions
+"10.5"
+
+"ten"
+
+"abc"
+
+Rule:
+int() works only with integers or numeric strings that represent whole numbers.
+
+4. float() – Converting to Floating-Point Number
+Description
+float() converts a value into a decimal number.
+
+Valid conversions
+"10" → 10.0
+
+"10.5" → 10.5
+
+7 → 7.0
+
+12 → 12.0
+
+Use float() when decimal precision is required.
+
+5. str() – Converting to String
+Description
+str() converts any data type into text.
+
+Examples:
+
+10 → "10"
+
+5.5 → "5.5"
+
+True → "True"
+
+Common use cases:
+
+Displaying values using print()
+
+Combining numbers with text
+
+Example:
+
+score = 100
+print("Your score is " + str(score))
+6. input() and Type Casting
+The input() function always returns a string, even if the user types a number.
+
+Example:
+
+age = input("Enter your age: ")
+print(type(age))
+Output:
+
+<class 'str'>
+Incorrect usage:
+
+age = input("Enter your age: ")
+print(age + 1)
+Correct usage:
+
+age = int(input("Enter your age: "))
+print(age + 1)
+7. Common Beginner Errors
+Error 1: Mixing strings and numbers
+print("Age: " + 18)
+Fix:
+
+print("Age: " + str(18))
+Error 2: Converting decimal strings using int()
+int("10.5")
+Fix:
+
+float("10.5")
+Error 3: Converting non-numeric strings
+int("hello")
+Explanation:
+Only numeric values can be converted using int() or float().
