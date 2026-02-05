@@ -1,5 +1,3 @@
-# data_types_notes.md
-
 ## Purpose
 This file explains **what data types are in Python** in a simple and beginner-friendly way.  
 Data types tell Python **what kind of value** a variable is holding.
